@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="With=device-width, initial-scale=1.0">
+    <title>Bucketlist Gijs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/e3bd0a7232.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header1">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <!--with this line you make links, for example buttons-->
+                    <li><a href="">ABOUT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1> Hallo World</h1>
+    <p> Mooie schoenen<br>neuken</p>
+    <a href="" class="hero-btn">KNOPPIE</a>
+</div>
+
+
+</section>
+
+<!----Course---->
+<section class="about">
+    <h1>pan bami</h1>
+    <p>homos uit skijndel</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>feest 1</h3>
+            <P>muziekje 1</P>
+        </div>
+        <div class="course-col">
+            <h3>feest 2</h3>
+            <P>muziekje 2</P>
+        </div>
+        <div class="course-col">
+            <h3>feest 3</h3>
+            <P>muziekje 3</P>
+        </div>
+    </div>
+</section>
+
+<!------JavaScript for Toggle Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+
+</html>
